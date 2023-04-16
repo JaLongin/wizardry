@@ -3,7 +3,6 @@
 // }
 import { getMain, createElement } from './common';
 import enterCastle from './castle/castle';
-import logo from '../Assets/rsschool-logo.svg';
 import { stopIntro } from './music';
 
 function startGame() {
@@ -18,9 +17,6 @@ function renderBasic() {
   const { body } = document;
   body.innerHTML = `
   <section class="footer-left">
-    <a id="rs-link" href="https://rs.school/js/">
-      <img id="rs-image" src=${logo as string}>
-    </a>
   </section>
   <main class="main">
       <button class="button button-start" id="start-game">Start Game</button>
